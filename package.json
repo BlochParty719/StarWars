@@ -1,0 +1,26 @@
+{
+  "name": "starwars",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BlochParty719/StarWars.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BlochParty719/StarWars/issues"
+  },
+  "homepage": "https://github.com/BlochParty719/StarWars#readme",
+  "dependencies": {
+    "bcrypt": "^3.0.7",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "mongoose": "^5.8.3"
+  }
+}
