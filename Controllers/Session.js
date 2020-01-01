@@ -1,7 +1,7 @@
-const express = require('express');
-const bcrypt = require('bcrypt');
-const router = express.Router();
-const User = require('../Models/users.js');
+const express = require('express')
+const bcrypt = require('bcrypt')
+const router = express.Router()
+const User = require('../Models/users.js')
 
 router.post('/', (req, res) => {
   User.findOne({username:req.body.username}, (error, foundUser) => {

@@ -7,7 +7,7 @@ app.use(express.json)
 app.use(express.static('public'))
 app.use(session({
   secret: 'feedmeseymour',
-  resave:false,
+  resave: false,
   saveUnitialized: false
 }))
 
