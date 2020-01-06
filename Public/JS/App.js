@@ -1,8 +1,8 @@
-const app = angular.module('MyApp', []);
+const app = angular.module('MyApp', [])
 
 app.controller('starwarsController', ['$http', function($http){
-  const controller = this;
-  this.indexOfEditFormToShow = null;
+  const controller = this
+  this.indexOfEditFormToShow = null
   this.loggedInUser = false;
 
   this.signup = function(){
@@ -14,7 +14,7 @@ app.controller('starwarsController', ['$http', function($http){
         password: this.signupPassword
       }
     }).then(function(response){
-      controller.loggedInUser = response.data;
+      controller.loggedInUser = response.data
     })
   }
 
@@ -28,10 +28,10 @@ app.controller('starwarsController', ['$http', function($http){
       }
     }).then(function(response){
       if(response.data.username){
-        controller.loggedInUser = response.data;
+        controller.loggedInUser = response.data
       } else {
-        controller.loginUsername = null;
-        controller.loginPassword = null;
+        controller.loginUsername = null
+        controller.loginPassword = null
       }
     })
   }
@@ -41,7 +41,7 @@ app.controller('starwarsController', ['$http', function($http){
       url:'/session',
       method:'DELETE'
     }).then(function(){
-      controller.loggedInUser = false;
+      controller.loggedInUser = false
     })
   }
 
@@ -99,5 +99,5 @@ app.controller('starwarsController', ['$http', function($http){
     if(response.data.username){
       controller.loggedInUser = response.data;
     }
-  });
-}]);
+  })
+}])
