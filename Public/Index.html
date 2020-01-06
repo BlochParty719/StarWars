@@ -6,44 +6,44 @@
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js" charset="utf-8"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.min.js" charset="utf-8"></script>
   <link rel="stylesheet" href="main.css">
-  <script src="/JS/app.js" charset="utf-8"></script>
+  <script src="/js/app.js" charset="utf-8"></script>
   <script type="text/javascript" src="js/app.js"></script>
 </head>
-  <main>
-    <h1>Star Wars</h1>
-    <section ng-if"ctrl.loggedInUser === false">
-      <form>
-        Username: <input type="text" /><br/>
-        Password: <input type="password" /><br/>
-        <input type="submit" value="Sign Up">
-      </form>
-      <br>
-      <form>
-        Username: <input type="text" ng-model="ctrl.loginUsername" /><br/>
-        Password: <input type="password" ng-model="ctrl.loginPassword" /><br/>
-        <input type="submit" value="Log In">
-      </form>
-    </section>
-    <section ng-if="ctrl.loggedInUser !== false">
-      <h2>May the force be with you {{ctrl.loggedInUser.username}}</h2>
-      <button ng-click="ctrl.logout()">Log Out</button>
-    </section>
+<main>
+  <h1>Star Wars</h1>
+  <section ng-if"ctrl.loggedInUser === false">
+    <form>
+      Username: <input type="text" /><br/>
+      Password: <input type="password" /><br/>
+      <input type="submit" value="Sign Up">
+    </form>
     <br>
-    <body>
+    <form>
+      Username: <input type="text" ng-model="ctrl.loginUsername" /><br/>
+      Password: <input type="password" ng-model="ctrl.loginPassword" /><br/>
+      <input type="submit" value="Log In">
+    </form>
+  </section>
+  <section ng-if="ctrl.loggedInUser !== false">
+    <h2>May the force be with you, {{ctrl.loggedInUser.username}}</h2>
+    <!-- <button ng-click="ctrl.logout()">Log Out</button> -->
+  </section>
+  <br>
+  <body>
     <div class="grid-container">
       <nav>
-      <ul>
-        <li><a href="EpisodeI.html" target='_blank'><img src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Star-wars-episode-i---the-phantom-menace.png"></a></li>
-        <li><a href="EpisodeII.html" target='_blank'><img src="https://vignette.wikia.nocookie.net/logopedia/images/6/6a/Star-wars-episode-ii---attack-of-the-clones.png/revision/latest/scale-to-width-down/340?cb=20130619001656"></a></li>
-        <li><a href="EpisodeIII.html" target='_blank'><img src="https://i.pinimg.com/originals/e0/08/66/e00866adfdfd42036d0baed1cdb818cb.png"></a></li>
-        <li><a href="EpisodeIV.html" target='_blank'><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Star_wars2.svg/1200px-Star_wars2.svg.png"></a></li>
-        <li><a href="EpisodeV.html" target='_blank'><img src="https://i.pinimg.com/originals/a9/0e/e5/a90ee5b2f7bd03a1bda39c94471cd4bf.png"></a></li>
-        <li><a href="EpisodeVI.html" target='_blank'><img src="https://airandspace.si.edu/exhibitions/star-wars/online/images/rojlogo.jpg"></a></li>
-      </ul>
+        <ul>
+          <li><a href="EpisodeI.html" target='_blank'><img src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Star-wars-episode-i---the-phantom-menace.png"></a></li>
+          <li><a href="EpisodeII.html" target='_blank'><img src="https://vignette.wikia.nocookie.net/logopedia/images/6/6a/Star-wars-episode-ii---attack-of-the-clones.png/revision/latest/scale-to-width-down/340?cb=20130619001656"></a></li>
+          <li><a href="EpisodeIII.html" target='_blank'><img src="https://i.pinimg.com/originals/e0/08/66/e00866adfdfd42036d0baed1cdb818cb.png"></a></li>
+          <li><a href="EpisodeIV.html" target='_blank'><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Star_wars2.svg/1200px-Star_wars2.svg.png"></a></li>
+          <li><a href="EpisodeV.html" target='_blank'><img src="https://i.pinimg.com/originals/a9/0e/e5/a90ee5b2f7bd03a1bda39c94471cd4bf.png"></a></li>
+          <li><a href="EpisodeVI.html" target='_blank'><img src="https://airandspace.si.edu/exhibitions/star-wars/online/images/rojlogo.jpg"></a></li>
+        </ul>
       </nav>
-      </div>
     </div>
-  </body>
+  </div>
+</body>
 <style>
 h1 {
   font-family: Trebuchet;

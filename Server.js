@@ -24,9 +24,9 @@ app.use('/session', sessionController)
 
 mongoose.connect('mongodb://localhost:27017/meancrud', {useNewUrlParser:true, useUnifiedTopology: true})
 mongoose.connection.once('open', () => {
-  console.log('connected to mongoose')
+  console.log('Connected to mongoose you are')
 })
 
 app.listen(3000, () => {
-  console.log('listening')
+  console.log('Listening I am')
 })

@@ -6,9 +6,9 @@ const User = require('../Models/users.js')
 router.post('/', (req, res) => {
   User.findOne({username:req.body.username}, (error, foundUser) => {
     if(foundUser === null){
-        res.json({
-          message:'User not found',
-        })
+      res.json({
+        message:'User not found',
+      })
     } else {
       const doesPasswordMatch = bcrypt.compareSync(req.body.password, foundUser.password)
       if(doesPasswordMatch){
